@@ -1,0 +1,95 @@
+@-webkit-keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fade-in {
+  opacity:0;
+  -webkit-animation:fade ease-in 1;
+  -moz-animation:fade ease-in 1;
+  animation:fade ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.off {
+  display: none;
+}
+
+.on {
+  display: block;
+}
+
+.show {
+  visibility: visible;
+}
+
+#view {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+#menu {
+  height: 500px;
+  width: 500px;
+  text-align: center;
+  margin: 100px auto auto auto;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  position: relative;
+}
+
+#game {
+  position: absolute;
+}
+
+#title, #winner, #loser {
+  position: absolute;
+  top: 35%;
+}
+#title {
+  left: 18%;
+}
+
+#winner {
+  left: 20%;
+}
+
+#loser {
+  left: 38%
+}
+
+.transparent {
+  opacity: .5
+}
+
+
+h2, p {
+  font-family: Helvetica;
+  font-weight: lighter;
+}
